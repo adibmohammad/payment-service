@@ -1,0 +1,19 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bankdb
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+
+jwt:
+  secret : seccod
+
+webservice:
+  payment:
+    provider1:
+      url: https://first-payment-provider/payments/transfer
+    provider2:
+      url: https://second-payment-provider/cards/pay
